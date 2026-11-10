@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9e6;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #f4c95d;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.note {
+    background-color: #fff2a8;
+    padding: 20px;
+    width: 220px;
+    min-height: 150px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #ccc;
+    overflow-wrap: anywhere;
+}
+
+.note h3 {
+    margin-top: 0;
+}
+
+.note a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+}
+
+input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f4c95d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

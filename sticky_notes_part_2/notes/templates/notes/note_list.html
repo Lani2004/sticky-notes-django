@@ -1,0 +1,21 @@
+{% extends 'notes/base.html' %}
+
+{% block content %}
+
+<h2>All Notes</h2>
+
+<div class="notes-container">
+    {% for note in notes %}
+        <div class="note">
+            <h3>{{ note.title }}</h3>
+            <p>{{ note.content|linebreaksbr }}</p>
+
+            <a href="{% url 'note_update' note.pk %}">Edit</a>
+            <a href="{% url 'note_delete' note.pk %}">Delete</a>
+        </div>
+    {% empty %}
+        <p>No notes yet. Create your first note!</p>
+    {% endfor %}
+</div>
+
+{% endblock %}
